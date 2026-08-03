@@ -1,0 +1,36 @@
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+
+# Composer
+vendor/
+composer.lock
+
+# Environment
+.env
+.env.*
+
+# IDEs
+.vscode/
+.idea/
+
+# Uploads and runtime user content (do NOT overwrite server uploads)
+assets/uploads/
+uploads/
+
+# Database dumps (keep locally but don't deploy automatically)
+database/*.sql
+
+# Logs and caches
+*.log
+cache/
+
+# GitHub Actions artifacts
+.github/actions/**
+
+# Ignore temporary files
+*.tmp
+*.swp

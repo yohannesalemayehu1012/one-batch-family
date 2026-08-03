@@ -1,0 +1,46 @@
+name: Deploy PHP Website
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up PHP (optional)
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.1'
+
+      - name: Deploy via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: .
+          server-dir: htdocs/
+          exclude: |
+            .github
+            .git
+            .gitignore
+            README.md
+            database/db.sql
+            database/*.sql
+            node_modules
+            vendor
+            tests
+            .env
+            .env.*
+            composer.lock
+            assets/uploads/**
+            uploads/**
+            **/node_modules/**
+            **/.git/**
