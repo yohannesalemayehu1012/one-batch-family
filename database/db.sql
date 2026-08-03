@@ -1,7 +1,7 @@
 -- MySQL schema for Dae Batch Family Website
 
-CREATE DATABASE IF NOT EXISTS one_batch_family;
-USE one_batch_family;
+-- CREATE DATABASE IF NOT EXISTS one_batch_family;
+-- USE one_batch_family;
 
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,

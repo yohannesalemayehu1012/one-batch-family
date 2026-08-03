@@ -1,6 +1,10 @@
 # Allow URL rewriting for clean URLs (optional)
 RewriteEngine On
 
+# Force HTTPS for all requests
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
 # Enable compression for faster page and asset delivery
 <IfModule mod_deflate.c>
     AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json image/svg+xml
