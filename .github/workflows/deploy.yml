@@ -25,8 +25,25 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: .
-          server-dir: htdocs/
+          protocol: ftp
+          port: 21
+          passive: true
+          local-dir: ./
+          server-dir: /htdocs/
+          include: |
+            admin/**
+            api/**
+            assets/**
+            auth/**
+            config/**
+            controllers/**
+            helpers/**
+            includes/**
+            models/**
+            pages/**
+            user/**
+            index.php
+            .htaccess
           exclude: |
             .github
             .git
