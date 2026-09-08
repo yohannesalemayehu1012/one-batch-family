@@ -112,6 +112,39 @@ one-batch-family/
 - View family statistics
 - Configure settings
 
+### Screenshots
+
+### login
+![My logo](assets/images/logo/login.png)
+
+### Home
+![My logo](assets/images/logo/Home.png)
+
+### Events
+![My logo](assets/images/logo/Events.png)
+
+### Members
+![My logo](assets/images/logo/Members.png)
+
+### Gallery 
+![My logo](assets/images/logo/Gallery.png)
+
+### Memories 
+![My logo](assets/images/logo/Memories.png)
+
+### Users
+![My logo](assets/images/logo/Users.png)
+
+### Settings 
+![My logo](assets/images/logo/Settings.png)
+
+### Prayers 
+![My logo](assets/images/logo/Prayers.png)
+
+### database.png
+![My logo](assets/images/logo/database.png)
+
+
 ## 🔒 Security Features
 
 - Password hashing with bcrypt
