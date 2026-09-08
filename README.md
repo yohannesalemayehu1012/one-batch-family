@@ -1,7 +1,7 @@
 # 👨‍👩‍👧‍👦 One Batch Family Website
 
 A modern, full-featured PHP + MySQL family website built with HTML5, CSS3, Bootstrap 5, and JavaScript. Perfect for families to share memories, connect, and stay updated.
-![My logo](assets/images/logo/logo.svg)
+![My logo](assets/images/logo/logo.jpg)
 
 ## 🌟 Features
 
